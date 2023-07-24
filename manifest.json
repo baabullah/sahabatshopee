@@ -3,7 +3,7 @@
 
 	"name" : "SahabatShopee",
 	"description": "Cara mudah download gambar dan foto di website shopee hanya dengan klik kanan pada gambar sudah langsung terdownload.",
-	"version" : "1.0.0",
+	"version" : "1.0.1",
 	"manifest_version" : 3,
 	"background": {
     "service_worker": "background.js"
