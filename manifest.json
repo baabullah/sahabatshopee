@@ -8,19 +8,19 @@
 	"background": {
     "service_worker": "background.js"
   },
-  "host_permissions": ["<all_urls>"],
+  "host_permissions": ["*://www.shopee.co.id/*", "*://shopee.co.id/*"],
   "permissions": ["activeTab","downloads"],
   "web_accessible_resources": [
       {
         "resources": [
 		  "download.mp3"
         ],
-        "matches": ["<all_urls>"]
+        "matches": ["*://www.shopee.co.id/*", "*://shopee.co.id/*"]
       }
     ],
   "content_scripts": [
       {
-        "matches": ["<all_urls>"],
+        "matches": ["*://www.shopee.co.id/*", "*://shopee.co.id/*"],
         "js": ["contentscript.js"]
       }
     ]
