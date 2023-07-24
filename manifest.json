@@ -1,0 +1,27 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+	"name" : "SahabatShopee",
+	"description": "Cara mudah download gambar dan foto di website shopee hanya dengan klik kanan pada gambar sudah langsung terdownload.",
+	"version" : "1.0.0",
+	"manifest_version" : 3,
+	"background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["<all_urls>"],
+  "permissions": ["activeTab","downloads"],
+  "web_accessible_resources": [
+      {
+        "resources": [
+		  "download.mp3"
+        ],
+        "matches": ["<all_urls>"]
+      }
+    ],
+  "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["contentscript.js"]
+      }
+    ]
+}
